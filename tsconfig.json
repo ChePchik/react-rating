@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"jsx": "react",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true, // Генерация .d.ts файлов
+		"outDir": "./dist", // Папка для выходных файлов
+		"moduleResolution": "node",
+		"lib": ["dom", "esnext"]
+	},
+	"include": ["src"], // Указывает, какие файлы обрабатывать
+	"exclude": ["node_modules"]
+}

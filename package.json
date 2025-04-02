@@ -1,0 +1,35 @@
+{
+	"name": "vite_lib",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ChePchik/react-rating.git"
+	},
+	"main": "./dist/my-library.cjs.js",
+	"module": "./dist/my-library.es.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build:types": "tsc --emitDeclarationOnly",
+		"build:lib": "vite build",
+		"build": "npm run build:types && npm run build:lib",
+		"build2": "tsc && vite build"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@types/react": "^19.1.0",
+		"@types/react-dom": "^19.1.1",
+		"@vitejs/plugin-react": "^4.3.4",
+		"typescript": "^5.8.2",
+		"vite": "^6.2.4"
+	},
+	"dependencies": {
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0"
+	}
+}
