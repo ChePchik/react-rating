@@ -33,24 +33,26 @@ import { Rating } from "@chepchik/react-rating";
 
 ## Properties
 
-| Prop Name           | Type                                     | Default Value              | Description                                                         |
-| ------------------- | ---------------------------------------- | -------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------- | ------ | -------------------- | ----------- | ---------------------------------------------------------------- |
-| `totalSymbols`      | `number`                                 | `5`                        | Total number of symbols (stars).                                    |
-| `value`             | `number`                                 | -                          | Current rating value. Must be >= 0.                                 |
-| `placeholderValue`  | `number`                                 | -                          | Placeholder value displayed on hover or when the rating is not set. |
-| `readonly`          | `boolean`                                | `false`                    | If `true`, the rating becomes read-only.                            |
-| `quiet`             | `boolean`                                | `false`                    | If `true`, event handling occurs only on touch.                     |
-| `fractions`         | `number`                                 | `1`                        | Support for fractional values (e.g., 0.5).                          |
-| `direction`         | `"ltr"                                   | "rtl"`                     | `"ltr"`                                                             | Text direction: left-to-right (`ltr`) or right-to-left (`rtl`). |
-| `emptySymbol`       | `string                                  | object                     | React.ReactElement                                                  | Array<string                                                    | object | React.ReactElement>` | -           | Customization for the appearance of empty symbols (stars).       |
-| `fullSymbol`        | `string                                  | object                     | React.ReactElement                                                  | Array<string                                                    | object | React.ReactElement>` | -           | Customization for the appearance of filled symbols (stars).      |
-| `placeholderSymbol` | `string                                  | object                     | React.ReactElement                                                  | Array<string                                                    | object | React.ReactElement>` | `undefined` | Customization for the appearance of placeholder symbols (stars). |
-| `onClick`           | `(value: number, event: React.MouseEvent | React.TouchEvent) => void` | -                                                                   | Function called when a symbol is clicked.                       |
-| `onHover`           | `(value?: number) => void`               | `() => {}`                 | Function called when hovering over a symbol.                        |
-| `className`         | `string`                                 | -                          | CSS class for the root element.                                     |
-| `id`                | `string`                                 | -                          | ID for the root element.                                            |
-| `style`             | `React.CSSProperties`                    | -                          | Inline styles for the root element.                                 |
-| `tabIndex`          | `number`                                 | -                          | `tabindex` attribute value for the root element.                    |
-| `aria-label`        | `string`                                 | -                          | `aria-label` attribute for accessibility.                           |
+| Prop Name           | Type                                                                                                     | Default Value                                                    | Description                                                         |
+| ------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `totalSymbols`      | `number`                                                                                                 | `5`                                                              | Total number of symbols (stars).                                    |
+| `value`             | `number`                                                                                                 | -                                                                | Current rating value. Must be >= 0.                                 |
+| `placeholderValue`  | `number`                                                                                                 | -                                                                | Placeholder value displayed on hover or when the rating is not set. |
+| `readonly`          | `boolean`                                                                                                | `false`                                                          | If `true`, the rating becomes read-only.                            |
+| `quiet`             | `boolean`                                                                                                | `false`                                                          | If `true`, event handling occurs only on touch.                     |
+| `fractions`         | `number`                                                                                                 | `1`                                                              | Support for fractional values (e.g., 0.5).                          |
+| `direction`         | `"ltr" or "rtl"`                                                                                         | `"ltr"`                                                          | Text direction: left-to-right (`ltr`) or right-to-left (`rtl`).     |
+| `emptySymbol`       | `string or object or React.ReactElement or Array<string or object or React.ReactElement>` or -           | Customization for the appearance of empty symbols (stars).       |
+| `fullSymbol`        | `string or object or React.ReactElement or Array<string or object or React.ReactElement>` or -           | Customization for the appearance of filled symbols (stars).      |
+| `placeholderSymbol` | `string or object or React.ReactElement or Array<string or object or React.ReactElement>` or `undefined` | Customization for the appearance of placeholder symbols (stars). |
+| `onClick`           | `(value: number, event: React.MouseEvent or React.TouchEvent) => void`                                   | -                                                                | Function called when a symbol is clicked.                           |
+| `onHover`           | `(value?: number) => void`                                                                               | `() => {}`                                                       | Function called when hovering over a symbol.                        |
+| `className`         | `string`                                                                                                 | -                                                                | CSS class for the root element.                                     |
+| `id`                | `string`                                                                                                 | -                                                                | ID for the root element.                                            |
+| `style`             | `React.CSSProperties`                                                                                    | -                                                                | Inline styles for the root element.                                 |
+| `tabIndex`          | `number`                                                                                                 | -                                                                | `tabindex` attribute value for the root element.                    |
+| `aria-label`        | `string`                                                                                                 | -                                                                | `aria-label` attribute for accessibility.                           |
 
-_I would be glad for your support_
+---
+
+### _I would be glad for your support_
