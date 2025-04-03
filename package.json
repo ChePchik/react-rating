@@ -28,18 +28,19 @@
 		"star component"
 	],
 	"scripts": {
-		"build:types": "tsc --emitDeclarationOnly",
-		"build:lib": "vite build",
-		"build": "npm run build:types && npm run build:lib",
-		"build2": "tsc && vite build"
+		"build": "tsc && vite build",
+		"prepare": "npm run build",
+		"release": "standard-version",
+		"postrelease": "git push --follow-tags origin main && npm publish"
 	},
 	"author": "",
-	"license": "ISC",
+	"license": "MIT",
 	"description": "",
 	"devDependencies": {
 		"@types/react": "^19.1.0",
 		"@types/react-dom": "^19.1.1",
 		"@vitejs/plugin-react": "^4.3.4",
+		"standard-version": "^9.5.0",
 		"typescript": "^5.8.2",
 		"vite": "^6.2.4"
 	},
