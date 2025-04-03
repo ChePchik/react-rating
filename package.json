@@ -1,6 +1,6 @@
 {
 	"name": "@chepchik/react-rating",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ChePchik/react-rating.git"
@@ -11,13 +11,28 @@
 	"files": [
 		"dist"
 	],
+	"keywords": [
+		"rating",
+		"react",
+		"component",
+		"react-component",
+		"react rating",
+		"react-rating",
+		"rating star",
+		"rating-star",
+		"rating-component",
+		"rating component",
+		"stars",
+		"star",
+		"star-component",
+		"star component"
+	],
 	"scripts": {
 		"build:types": "tsc --emitDeclarationOnly",
 		"build:lib": "vite build",
 		"build": "npm run build:types && npm run build:lib",
 		"build2": "tsc && vite build"
 	},
-	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"description": "",
