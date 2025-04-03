@@ -1,6 +1,6 @@
 {
-	"name": "vite_lib",
-	"version": "0.0.1",
+	"name": "@chepchik/react-rating",
+	"version": "0.0.3",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ChePchik/react-rating.git"
