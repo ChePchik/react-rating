@@ -20,14 +20,21 @@ npm i @chepchik/react-rating
 
 ```jsx
 import { Rating } from "@chepchik/react-rating";
+...
+const [rating, setRating] = useState<number>(3);
+
+const handleRatingClick = (value: number) => {
+  console.log("Clicked rating:", value);
+  setRating(value);
+};
 
 <Rating
-	value={rating}
-	placeholderValue={rating}
-	readonly={false}
-	emptySymbol={<Star size={22} fill='#babfc7' stroke='#babfc7' />}
-	fullSymbol={<Star size={22} fill={"#FFD703"} stroke={"#FFD703"} />}
-	onClick={handleRatingClick}
+value={rating}
+placeholderValue={rating}
+readonly={false}
+emptySymbol={<span style={{ color: "#ffcc00" }}>☆</span>}
+fullSymbol={<span style={{ color: "#ffcc00" }}>★</span>}
+onClick={handleRatingClick}
 />;
 ```
 
